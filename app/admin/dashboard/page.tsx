@@ -3,6 +3,7 @@
  import { useEffect, useState } from "react";
  import { useRouter } from "next/navigation";
 
+
  const sections = [
    {
      id: "courses",
@@ -56,14 +57,25 @@
    return (
      <div className="bg-slate-50">
        <div className="bg-primary py-16 text-white">
-         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-           <h1 className="font-display text-4xl font-bold">Admin Content Manager</h1>
-           <p className="mt-2 text-slate-300">
-             Upload courses, blogs, articles, MCQs, and downloadable content for your students.
-           </p>
-         </div>
-       </div>
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
 
+          <div>
+          <h1 className="font-display text-4xl font-bold">Admin Dashboard</h1>
+          <p className="mt-2 text-slate-300">
+          Manage your content and add new courses, blogs, articles, MCQs, and downloadable resources for your students. You can also edit and delete existing content.
+          </p>
+          </div>
+          <button
+            onClick={() => {
+              localStorage.removeItem("admin-auth");
+              router.push("/admin/login");
+            }}
+            className="rounded-lg bg-red-500 px-4 py-2 text-sm font-semibold text-white hover:bg-red-600"
+          >
+            Logout
+          </button>
+          </div>
+        </div>
        <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
          <div className="grid gap-8 lg:grid-cols-2">
            {sections.map((section) => (

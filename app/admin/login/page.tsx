@@ -1,16 +1,26 @@
 "use client";
 
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 export default function AdminLoginPage() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const router = useRouter();
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
     if (username === "admin" && password === "123456") {
+
+      // store login token
+      localStorage.setItem("admin-auth", "true");
+
       alert("Login successful");
+
+      // redirect to dashboard
+      router.push("/admin/dashboard");
+
     } else {
       alert("Invalid username or password");
     }
