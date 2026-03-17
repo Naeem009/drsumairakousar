@@ -26,7 +26,7 @@ const slides = [
     subtitle: "Structured courses, MCQs, certificates, and free resources to ace exams and research.",
     cta: "View All Courses",
     href: "/courses",
-    image: "/hero/dr-sumaira-kousar-phd-biochemistry-1.jpg",
+    image: "/hero/dr-sumaira-kousar-phd-biochemistry-3.jpg",
     overlay: "from-primary/85 via-primary-dark/80 to-accent/70",
   },
   {
@@ -34,7 +34,7 @@ const slides = [
     subtitle: "Dr. Sumaira Kousar brings cutting-edge molecular sciences to your screen.",
     cta: "About Dr. Sumaira",
     href: "/about",
-    image: "/hero/dr-sumaira-kousar-phd-biochemistry-2.jpg",
+    image: "/hero/dr-sumaira-kousar-phd-biochemistry-4.jpg",
     overlay: "from-accent-dark/80 via-primary/85 to-primary-dark/90",
   },
   {
@@ -42,7 +42,7 @@ const slides = [
     subtitle: "Explore courses. Download free protocols. Join hundreds of students.",
     cta: "Get Started",
     href: "/courses",
-    image: "/hero/dr-sumaira-kousar-phd-biochemistry-1.jpg",
+    image: "/hero/dr-sumaira-kousar-phd-biochemistry-5.jpg",
     overlay: "from-primary-dark/90 via-primary/80 to-accent/60",
   },
 ];
