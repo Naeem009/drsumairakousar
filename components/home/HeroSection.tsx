@@ -10,7 +10,7 @@ const slides = [
     subtitle: "From DNA to proteins — learn with research-backed courses and hands-on lab focus.",
     cta: "Explore Courses",
     href: "/courses",
-    image: "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=1920&q=80",
+    image: "/hero/dr-sumaira-kousar-phd-biochemistry-1.jpg",
     overlay: "from-primary/90 via-primary/70 to-primary-dark/90",
   },
   {
@@ -18,7 +18,7 @@ const slides = [
     subtitle: "International training experience. Updated tools. Real skills for your career.",
     cta: "Free Resources",
     href: "/resources",
-    image: "https://images.unsplash.com/photo-1576086213369-97a306d36557?w=1920&q=80",
+    image: "/hero/dr-sumaira-kousar-phd-biochemistry-2.jpg",
     overlay: "from-primary-dark/90 via-accent/40 to-primary/90",
   },
   {
@@ -26,7 +26,7 @@ const slides = [
     subtitle: "Structured courses, MCQs, certificates, and free resources to ace exams and research.",
     cta: "View All Courses",
     href: "/courses",
-    image: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=1920&q=80",
+    image: "/hero/dr-sumaira-kousar-phd-biochemistry-1.jpg",
     overlay: "from-primary/85 via-primary-dark/80 to-accent/70",
   },
   {
@@ -34,7 +34,7 @@ const slides = [
     subtitle: "Dr. Sumaira Kousar brings cutting-edge molecular sciences to your screen.",
     cta: "About Dr. Sumaira",
     href: "/about",
-    image: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=1920&q=80",
+    image: "/hero/dr-sumaira-kousar-phd-biochemistry-2.jpg",
     overlay: "from-accent-dark/80 via-primary/85 to-primary-dark/90",
   },
   {
@@ -42,7 +42,7 @@ const slides = [
     subtitle: "Explore courses. Download free protocols. Join hundreds of students.",
     cta: "Get Started",
     href: "/courses",
-    image: "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=1920&q=80",
+    image: "/hero/dr-sumaira-kousar-phd-biochemistry-1.jpg",
     overlay: "from-primary-dark/90 via-primary/80 to-accent/60",
   },
 ];
@@ -75,7 +75,7 @@ export default function HeroSection() {
         >
           <Image
             src={slide.image}
-            alt=""
+            alt={slide.title}
             fill
             className="object-cover"
             sizes="100vw"
