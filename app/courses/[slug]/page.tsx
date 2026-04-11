@@ -65,8 +65,8 @@ type Props = { params: Promise<{ slug: string }> };
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const course = courseData[slug];
-  if (!course) return { title: "Course | Dr. Sumaira" };
-  return { title: `${course.title} | Dr. Sumaira Kousar` };
+  if (!course) return { title: "Course" };
+  return { title: course.title };
 }
 
 export default async function CoursePage({ params }: Props) {

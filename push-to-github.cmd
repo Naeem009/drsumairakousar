@@ -1,11 +1,11 @@
 @echo off
 REM ============================================================
 REM 1. Create a new repo on GitHub: https://github.com/new
-REM    (e.g. name: dr-sumaira-edu)
+REM    (e.g. name: bioscope)
 REM 2. Edit the two lines below with YOUR GitHub username and repo name:
 REM ============================================================
 set GITHUB_USER=YOUR_GITHUB_USERNAME
-set REPO_NAME=dr-sumaira-edu
+set REPO_NAME=bioscope
 
 set GIT="C:\Program Files\Git\bin\git.exe"
 cd /d "%~dp0"

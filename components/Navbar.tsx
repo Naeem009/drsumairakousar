@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import { SITE_DOMAIN, SITE_NAME } from "@/lib/site";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -21,8 +22,11 @@ export default function Navbar() {
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
         <Link href="/" className="flex items-center gap-2">
           <span className="text-2xl" aria-hidden>🧬</span>
-          <span className="font-display text-xl font-bold text-primary">
-            Dr. Sumaira
+          <span className="flex flex-col leading-tight">
+            <span className="font-display text-xl font-bold text-primary">{SITE_NAME}</span>
+            <span className="text-[11px] font-medium text-slate-500 sm:text-xs">
+              {SITE_DOMAIN}
+            </span>
           </span>
         </Link>
 

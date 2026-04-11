@@ -1,6 +1,6 @@
-# Dr. Sumaira Kousar — Educational Platform
+# BIOSCOPE — Educational Platform
 
-A Next.js educational website for **Advanced Biochemistry & Molecular Sciences** by Dr. Sumaira Kousar. Built with **Next.js 15** and **Tailwind CSS**.
+A Next.js educational website for **Advanced Biochemistry & Molecular Sciences** at **bioscope.com.pk**, with mentorship by **Dr. Sumaira Kousar**. Built with **Next.js 15** and **Tailwind CSS**.
 
 ## Design
 
@@ -12,7 +12,7 @@ A Next.js educational website for **Advanced Biochemistry & Molecular Sciences**
 
 | Page | Route | Content |
 |------|--------|---------|
-| Home | `/` | Hero, Featured Courses, Why Learn With Us, Free Downloads, About Dr. Sumaira, Testimonials, Newsletter |
+| Home | `/` | Hero, Featured Courses, Why Learn With Us, Free Downloads, About Dr. Sumaira (mentorship), Testimonials, Newsletter |
 | About | `/about` | Academic profile, research, publications, workshops, mission & vision |
 | Courses | `/courses` | Category grid (BS Biochemistry, Molecular Biology, Genetics, etc.) |
 | Course detail | `/courses/[slug]` | Overview, outcomes, videos, PDFs, quizzes, certificate |

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { SITE_NAME } from "@/lib/site";
 
 export default function AboutDrSumaira() {
   return (
@@ -6,9 +7,9 @@ export default function AboutDrSumaira() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid items-center gap-12 lg:grid-cols-2">
           <div>
-            <h2 className="section-heading">About Dr. Sumaira</h2>
+            <h2 className="section-heading">Mentorship by Dr. Sumaira Kousar</h2>
             <p className="mt-4 text-slate-600">
-              Dr. Sumaira Kousar brings research-based teaching and international training
+              {SITE_NAME} is led and mentored by Dr. Sumaira Kousar, who brings research-based teaching and international training
               experience to biochemistry and molecular sciences. Her focus is on practical
               lab techniques, updated molecular tools, and clear explanations suited for
               students and professionals.

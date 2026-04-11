@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
+import { SITE_DOMAIN, SITE_NAME } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Free Resources | Dr. Sumaira Kousar",
-  description: "MCQs bank, practical manuals, lab protocols, PPT slides, and short biochemistry videos.",
+  title: "Free Resources",
+  description: `Free resources on ${SITE_NAME} (${SITE_DOMAIN}) — MCQs bank, practical manuals, lab protocols, PPT slides, and short biochemistry videos. Mentorship by Dr. Sumaira Kousar.`,
 };
 
 const resourceSections = [

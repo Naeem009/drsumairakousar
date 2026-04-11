@@ -1,7 +1,8 @@
- "use client";
+"use client";
 
- import { useEffect, useState } from "react";
- import { useRouter } from "next/navigation";
+import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
+import { SITE_DOMAIN, SITE_NAME } from "@/lib/site";
 
 function extractGoogleDriveFileId(input: string): string | null {
   // Supports common share URL formats:
@@ -86,7 +87,8 @@ function extractGoogleDriveFileId(input: string): string | null {
           <div>
           <h1 className="font-display text-4xl font-bold">Admin Dashboard</h1>
           <p className="mt-2 text-slate-300">
-          Manage your content and add new courses, blogs, articles, MCQs, and downloadable resources for your students. You can also edit and delete existing content.
+            Manage {SITE_NAME} ({SITE_DOMAIN}) content — courses, blogs, articles, MCQs, and downloadable resources for
+            your students (mentorship by Dr. Sumaira Kousar). You can also edit and delete existing content.
           </p>
           </div>
           <button

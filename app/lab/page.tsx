@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
+import { SITE_DOMAIN, SITE_NAME } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Student Lab Corner | Dr. Sumaira Kousar",
-  description: "DNA extraction, PCR guide, paper chromatography, proteomics techniques, and lab safety.",
+  title: "Student Lab Corner",
+  description: `DNA extraction, PCR guide, paper chromatography, proteomics techniques, and lab safety on ${SITE_NAME} (${SITE_DOMAIN}). Mentorship by Dr. Sumaira Kousar.`,
 };
 
 const labTopics = [

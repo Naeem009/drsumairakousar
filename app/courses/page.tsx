@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { SITE_DOMAIN, SITE_NAME } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Courses | Dr. Sumaira Kousar",
-  description: "BS Biochemistry, Molecular Biology, Genetics, Biotechnology, Proteomics, and Lab Techniques.",
+  title: "Courses",
+  description: `BS Biochemistry, Molecular Biology, Genetics, Biotechnology, Proteomics, and Lab Techniques on ${SITE_NAME} (${SITE_DOMAIN}). Mentorship by Dr. Sumaira Kousar.`,
 };
 
 const categories = [

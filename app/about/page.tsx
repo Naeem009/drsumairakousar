@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
+import { SITE_DOMAIN, SITE_NAME } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "About | Dr. Sumaira Kousar",
-  description: "Academic profile, research experience, publications, workshops, and mission.",
+  title: "About",
+  description: `About ${SITE_NAME} (${SITE_DOMAIN}) — academic profile, research experience, publications, workshops, and mission. Mentorship by Dr. Sumaira Kousar.`,
 };
 
 export default function AboutPage() {
@@ -10,9 +11,9 @@ export default function AboutPage() {
     <div className="bg-slate-50">
       <div className="bg-primary py-16 text-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <h1 className="font-display text-4xl font-bold">About</h1>
+          <h1 className="font-display text-4xl font-bold">About {SITE_NAME}</h1>
           <p className="mt-2 text-slate-300">
-            Academic profile, research, and mission.
+            Academic profile, research, and mission — mentorship by Dr. Sumaira Kousar.
           </p>
         </div>
       </div>
@@ -23,7 +24,7 @@ export default function AboutPage() {
             My Academic Profile
           </h2>
           <p className="mt-4 text-slate-600">
-            Dr. Sumaira Kousar holds a strong academic background in Biochemistry and
+            {SITE_NAME} ({SITE_DOMAIN}) is led and mentored by Dr. Sumaira Kousar, who holds a strong academic background in Biochemistry and
             Molecular Sciences, with degrees and training from reputed institutions.
             Her teaching and research focus on making complex concepts accessible
             while maintaining scientific rigor.

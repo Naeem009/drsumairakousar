@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import ContactForm from "@/components/ContactForm";
+import { SITE_DOMAIN, SITE_NAME, SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Contact | Dr. Sumaira Kousar",
-  description: "Get in touch via form, email, WhatsApp, or collaboration form.",
+  title: "Contact",
+  description: `Contact ${SITE_NAME} (${SITE_DOMAIN}) — get in touch via form, email, WhatsApp, or collaboration.`,
 };
 
 export default function ContactPage() {
@@ -29,6 +30,16 @@ export default function ContactPage() {
 
           <div className="space-y-8">
             <section className="card">
+              <h2 className="font-display text-2xl font-bold text-primary">Website</h2>
+              <a href={SITE_URL} className="mt-2 block text-accent hover:underline">
+                {SITE_URL.replace(/^https?:\/\//, "")}
+              </a>
+              <p className="mt-2 text-sm text-slate-600">
+                Official domain for {SITE_NAME}.
+              </p>
+            </section>
+
+            <section className="card">
               <h2 className="font-display text-2xl font-bold text-primary">Email</h2>
               <a
                 href="mailto:sumairakousar@gmail.com"
@@ -37,7 +48,7 @@ export default function ContactPage() {
                 sumairakousar@gmail.com
               </a>
               <p className="mt-2 text-sm text-slate-600">
-                My personal email address.
+                Direct email for Dr. Sumaira Kousar ({SITE_NAME} mentorship).
               </p>
             </section>
 

@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { SITE_DOMAIN, SITE_NAME, SITE_URL } from "@/lib/site";
 
 const quickLinks = [
   { href: "/about", label: "About" },
@@ -26,13 +27,19 @@ export default function Footer() {
             <div className="flex items-center gap-2">
               <span className="text-2xl">🧬</span>
               <span className="font-display text-lg font-bold">
-                Dr. Sumaira Kousar
+                {SITE_NAME}
               </span>
             </div>
             <p className="mt-3 text-sm text-slate-300">
-              Advanced Biochemistry & Molecular Sciences Learning Platform.
+              {SITE_DOMAIN} — advanced biochemistry & molecular sciences. Mentorship by Dr. Sumaira Kousar.
               Research-based teaching with practical lab focus.
             </p>
+            <a
+              href={SITE_URL}
+              className="mt-3 inline-block text-sm font-semibold text-accent-light hover:underline"
+            >
+              {SITE_URL.replace(/^https?:\/\//, "")}
+            </a>
           </div>
 
           <div>
@@ -87,7 +94,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-10 border-t border-white/10 pt-6 text-center text-sm text-slate-400">
-          © {new Date().getFullYear()} Dr. Sumaira Kousar. Educational use.
+          © {new Date().getFullYear()} {SITE_NAME}. Mentorship: Dr. Sumaira Kousar. Educational use.
         </div>
       </div>
     </footer>

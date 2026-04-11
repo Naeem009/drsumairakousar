@@ -31,8 +31,9 @@ const slides = [
   },
   {
     title: "Learn From a Researcher Who Teaches",
-    subtitle: "Dr. Sumaira Kousar brings cutting-edge molecular sciences to your screen.",
-    cta: "About Dr. Sumaira",
+    subtitle:
+      "BIOSCOPE brings cutting-edge molecular sciences to your screen — led and mentored by Dr. Sumaira Kousar.",
+    cta: "About BIOSCOPE",
     href: "/about",
     image: "/hero/dr-sumaira-kousar-phd-biochemistry-4.jpg",
     overlay: "from-accent-dark/80 via-primary/85 to-primary-dark/90",
@@ -130,7 +131,7 @@ export default function HeroSection() {
               } ${i === current ? "relative z-10" : ""}`}
               >
               <p className="font-display text-accent-light text-sm font-semibold uppercase tracking-wider">
-                By Dr. Sumaira Kousar
+                BIOSCOPE — mentorship by Dr. Sumaira Kousar
               </p>
               <h1 className="mt-4 font-display text-4xl font-bold tracking-tight text-white drop-shadow-lg sm:text-5xl lg:text-6xl">
                 {slide.title}

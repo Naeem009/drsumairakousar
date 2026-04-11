@@ -14,7 +14,7 @@ type Props = { params: Promise<{ slug: string }> };
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const title = categoryTitles[slug] || "Research & Blog";
-  return { title: `${title} | Dr. Sumaira Kousar` };
+  return { title };
 }
 
 export default async function ResearchCategoryPage({ params }: Props) {

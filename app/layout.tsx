@@ -3,6 +3,7 @@ import { Poppins, Montserrat } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { SITE_DOMAIN, SITE_NAME, SITE_TAGLINE, SITE_URL } from "@/lib/site";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -17,9 +18,13 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "Dr. Sumaira Kousar | Advanced Biochemistry & Molecular Sciences",
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: `${SITE_NAME} | ${SITE_TAGLINE}`,
+    template: `%s | ${SITE_NAME}`,
+  },
   description:
-    "Educational platform for Biochemistry, Molecular Biology, Genetics, Biotechnology, and Proteomics. Research-based teaching with practical lab focus.",
+    `${SITE_NAME} (${SITE_DOMAIN}) — courses, MCQs, protocols, and lab-focused learning in biochemistry and molecular sciences. Mentorship by Dr. Sumaira Kousar.`,
 };
 
 export default function RootLayout({

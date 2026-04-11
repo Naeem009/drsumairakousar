@@ -7,11 +7,11 @@ Your code is **already committed** locally. You only need to add your GitHub rep
 ## Option A: Use the script (easiest)
 
 1. **Create a new repo on GitHub:** https://github.com/new  
-   - Name it (e.g. `dr-sumaira-edu`), leave "Add a README" **unchecked**, click Create.
+   - Name it (e.g. `bioscope`), leave "Add a README" **unchecked**, click Create.
 
 2. **Edit `push-to-github.cmd`** in this folder:  
    - Set `GITHUB_USER=YOUR_GITHUB_USERNAME` to your real GitHub username.  
-   - Set `REPO_NAME=dr-sumaira-edu` (or whatever you named the repo).
+   - Set `REPO_NAME=bioscope` (or whatever you named the repo).
 
 3. **Double‑click `push-to-github.cmd`** or run it from Command Prompt.  
    - It uses Git’s full path, so it works even if `git` is not in your PATH.
