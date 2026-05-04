@@ -38,7 +38,9 @@ export default function FeaturedCourses() {
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {courses.map((course) => (
             <div key={course.slug} className="card group">
-              <div className="text-4xl">{course.icon}</div>
+              <div className="inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-primary/5 text-5xl ring-1 ring-primary/10">
+                {course.icon}
+              </div>
               <h3 className="mt-4 font-display text-lg font-semibold text-primary group-hover:text-accent">
                 {course.title}
               </h3>
@@ -47,7 +49,7 @@ export default function FeaturedCourses() {
                 href={`/courses/${course.slug}`}
                 className="mt-4 inline-block text-sm font-semibold text-accent hover:underline"
               >
-                Enroll →
+                More info →
               </Link>
             </div>
           ))}
