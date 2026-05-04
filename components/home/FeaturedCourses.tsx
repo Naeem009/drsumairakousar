@@ -2,8 +2,8 @@ import Link from "next/link";
 
 const courses = [
   {
-    slug: "bs-biochemistry",
-    title: "BS Biochemistry",
+    slug: "biochemistry",
+    title: "Biochemistry",
     description: "Core biochemistry concepts, metabolic pathways, and enzyme kinetics for undergraduate level.",
     icon: "🧪",
   },
