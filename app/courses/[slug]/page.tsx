@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 
 const courseData: Record<string, { title: string; overview: string; outcomes: string[] }> = {
   "biochemistry": {
-    title: "BS Biochemistry",
+    title: "Biochemistry",
     overview: "Core biochemistry for undergraduate students: structure and function of biomolecules, metabolic pathways, enzyme kinetics, and regulation.",
     outcomes: [
       "Understand structure and function of proteins, nucleic acids, and lipids",
