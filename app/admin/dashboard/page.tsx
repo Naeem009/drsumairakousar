@@ -54,10 +54,22 @@ function extractGoogleDriveFileId(input: string): string | null {
   // Google Drive upload links (manual mode).
   // You provided your Drive home link for all sections.
   const driveUploadLinks: Record<string, string> = {
-    courses: "https://drive.google.com/drive/u/2/home",
-    blogs: "https://drive.google.com/drive/u/2/home",
-    mcqs: "https://drive.google.com/drive/u/2/home",
-    resources: "https://drive.google.com/drive/u/2/home",
+    courses: "https://drive.google.com/drive/my-drive",
+    blogs: "https://drive.google.com/drive/my-drive",
+    mcqs: "https://drive.google.com/drive/my-drive",
+    resources: "https://drive.google.com/drive/my-drive",
+  };
+
+  const openDriveUpload = (sectionId: string) => {
+    const url = driveUploadLinks[sectionId];
+    if (!url) return;
+
+    // More reliable than relying on plain anchor behavior inside forms.
+    const newTab = window.open(url, "_blank", "noopener,noreferrer");
+    if (!newTab) {
+      // Fallback when popup blockers prevent opening a new tab.
+      window.location.href = url;
+    }
   };
 
    useEffect(() => {
@@ -179,14 +191,13 @@ function extractGoogleDriveFileId(input: string): string | null {
                     only for selecting the file name during your workflow.
                    </p>
                   <div className="mt-3 flex items-center gap-3">
-                    <a
-                      href={driveUploadLinks[section.id]}
-                      target="_blank"
-                      rel="noreferrer"
+                    <button
+                      type="button"
+                      onClick={() => openDriveUpload(section.id)}
                       className="btn-secondary"
                     >
                       Upload to Google Drive
-                    </a>
+                    </button>
                     <span className="text-xs text-slate-500">
                       Opens your Google Drive link for manual upload.
                     </span>
