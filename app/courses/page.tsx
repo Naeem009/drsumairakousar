@@ -4,11 +4,11 @@ import { SITE_DOMAIN, SITE_NAME } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Courses",
-  description: `BS Biochemistry, Molecular Biology, Genetics, Biotechnology, Proteomics, and Lab Techniques on ${SITE_NAME} (${SITE_DOMAIN}). Mentorship by Dr. Sumaira Kousar.`,
+  description: `Biochemistry, Molecular Biology, Genetics, Biotechnology, Proteomics, and Lab Techniques on ${SITE_NAME} (${SITE_DOMAIN}). Mentorship by Dr. Sumaira Kousar.`,
 };
 
 const categories = [
-  { slug: "bs-biochemistry", title: "BS Biochemistry", icon: "🧪", short: "Core biochemistry for undergrads" },
+  { slug: "biochemistry", title: "Biochemistry", icon: "🧪", short: "Core biochemistry for undergrads" },
   { slug: "molecular-biology", title: "Molecular Biology", icon: "🧬", short: "DNA, RNA, and gene expression" },
   { slug: "genetics", title: "Genetics", icon: "📐", short: "Mendelian to molecular genetics" },
   { slug: "biotechnology", title: "Biotechnology", icon: "🔬", short: "Recombinant DNA and applications" },
