@@ -51,13 +51,13 @@ function extractGoogleDriveFileId(input: string): string | null {
    const router = useRouter();
    const [ready, setReady] = useState(false);
 
-  // Paste your Google Drive folder links here (one per section).
-  // Tip: open Drive -> right click your folder -> "Share" -> copy link.
+  // Google Drive upload links (manual mode).
+  // You provided your Drive home link for all sections.
   const driveUploadLinks: Record<string, string> = {
-    courses: "PASTE_COURSES_GOOGLE_DRIVE_FOLDER_LINK_HERE",
-    blogs: "PASTE_BLOGS_GOOGLE_DRIVE_FOLDER_LINK_HERE",
-    mcqs: "PASTE_MCQS_GOOGLE_DRIVE_FOLDER_LINK_HERE",
-    resources: "PASTE_RESOURCES_GOOGLE_DRIVE_FOLDER_LINK_HERE",
+    courses: "https://drive.google.com/drive/u/2/home",
+    blogs: "https://drive.google.com/drive/u/2/home",
+    mcqs: "https://drive.google.com/drive/u/2/home",
+    resources: "https://drive.google.com/drive/u/2/home",
   };
 
    useEffect(() => {
@@ -188,7 +188,7 @@ function extractGoogleDriveFileId(input: string): string | null {
                       Upload to Google Drive
                     </a>
                     <span className="text-xs text-slate-500">
-                      Use the folder link for '{section.title}'.
+                      Opens your Google Drive link for manual upload.
                     </span>
                   </div>
                  </div>
