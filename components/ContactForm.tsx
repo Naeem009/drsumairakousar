@@ -22,7 +22,7 @@ export default function ContactForm() {
           id="email"
           type="email"
           className="mt-1 w-full rounded-lg border border-slate-300 px-4 py-2 focus:border-accent focus:ring-1 focus:ring-accent"
-          placeholder="your@email.com"
+          placeholder="Admin.bioscope@gmail.com"
         />
       </div>
       <div>

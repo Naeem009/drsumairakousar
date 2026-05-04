@@ -42,10 +42,10 @@ export default function ContactPage() {
             <section className="card">
               <h2 className="font-display text-2xl font-bold text-primary">Email</h2>
               <a
-                href="mailto:sumairakousar@gmail.com"
+                href="mailto:Admin.bioscope@gmail.com"
                 className="mt-2 block text-accent hover:underline"
               >
-                sumairakousar@gmail.com
+                Admin.bioscope@gmail.com
               </a>
               <p className="mt-2 text-sm text-slate-600">
                 Direct email for Dr. Sumaira Kousar ({SITE_NAME} mentorship).

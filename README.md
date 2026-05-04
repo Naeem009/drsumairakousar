@@ -40,7 +40,7 @@ npm start
 
 ## Customization
 
-- **Email:** Update `contact@example.com` in `app/contact/page.tsx`.
+- **Email:** Update `Admin.bioscope@gmail.com` in `app/contact/page.tsx`.
 - **WhatsApp:** Replace `https://wa.me/1234567890` with your number in `app/contact/page.tsx`.
 - **Social links:** Edit `components/Footer.tsx` with real YouTube, LinkedIn, Twitter URLs.
 - **Content:** Edit course data in `app/courses/[slug]/page.tsx`, and copy in `app/about/page.tsx`, `app/resources/page.tsx`, etc.

@@ -27,6 +27,6 @@ if %ERRORLEVEL% equ 0 (
   echo Push failed. Common fixes:
   echo - Replace YOUR_GITHUB_USERNAME and repo name at the top of this file
   echo - If GitHub asks for password, use a Personal Access Token: https://github.com/settings/tokens
-  echo - Or set your Git identity: git config --global user.email "you@example.com" and user.name "Your Name"
+  echo - Or set your Git identity: git config --global user.email "Admin.bioscope@gmail.com" and user.name "Your Name"
 )
 pause

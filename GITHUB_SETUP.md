@@ -24,7 +24,7 @@ Your code is **already committed** locally. You only need to add your GitHub rep
 ## Option B: Use terminal commands
 
 1. **Set your Git identity** (once per machine):
-   ```bash   "C:\Program Files\Git\bin\git.exe" config --global user.email "your@email.com"
+   ```bash   "C:\Program Files\Git\bin\git.exe" config --global user.email "Admin.bioscope@gmail.com"
    "C:\Program Files\Git\bin\git.exe" config --global user.name "Your Name"
    ```
 
